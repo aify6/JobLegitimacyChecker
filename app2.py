@@ -55,7 +55,7 @@ st.markdown(
 # Main Banner Section
 st.title("🛡️ Job Legitimacy Checker")
 st.write("Analyze job postings for legitimacy using data-driven techniques.")
-st.image(r"images\762887_Job1-01.jpg", caption="Ensure safe job applications!", use_container_width=True)
+st.image(r"762887_Job1-01.jpg", caption="Ensure safe job applications!", use_container_width=True)
 
 # Sidebar for inputs
 with st.sidebar:
