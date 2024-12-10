@@ -23,7 +23,6 @@ st.markdown("""
         .banner-image { width: 100%; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
         .confidence-score { font-size: 1.2rem; font-weight: bold; color: #007BFF; }
         .section-header { font-size: 2.0rem; font-weight: bold; margin-top: 20px; color: #444444; }
-        .risk-warning { background-color: #FF0000; color: #FFFFFF; border-radius: 5px; padding: 10px; margin: 10px 0; }
         footer { text-align: center; padding: 10px; font-size: 0.85rem; color: #555555; }
     </style>
     """, unsafe_allow_html=True)
@@ -98,6 +97,8 @@ Comprehensive Analysis Request:
 1. Provide a detailed assessment of the job posting's legitimacy.
 2. Explain the reasoning behind your assessment.
 3. Generate a confidence percentage (0-100%) based on the strength of evidence.
+    - If the prediction is LEGITIMATE, the confidence should naturally tend towards a higher percentage (reflecting higher certainty)
+    - If the prediction is SUSPICIOUS, the confidence should naturally tend towards a lower percentage (reflecting lower certainty)
 4. Highlight specific red flags or positive indicators.
 5. Recommend actions for the job seeker.
 
